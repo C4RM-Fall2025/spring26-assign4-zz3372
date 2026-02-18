@@ -1,14 +1,14 @@
 def getBondPrice(y, face, couponRate, m, ppy=1):
 
     pvcsum = 0
-    n = int(m * ppy)
+    n = m * ppy
     coupon = face * couponRate / ppy
-    rate = y / ppy
+    t = y / ppy
 
     for i in range(1, n + 1):
-        pvcsum += coupon / (1 + rate) ** i
+        pvcsum += coupon / (1 +t) ** i
 
-    pvcsum += face / (1 + rate) ** n
+    pvcsum += face / (1 + t) ** n
 
     return （pvcsum）
 
