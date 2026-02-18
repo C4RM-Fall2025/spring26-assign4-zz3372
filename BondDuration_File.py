@@ -1,5 +1,6 @@
 
-def getBondDuration(y, face, couponRate, m, ppy = 1):
+def getBondDuration(y, face, couponRate, m, ppy=1):
+
     y = y / ppy
     coupon = face * couponRate / ppy
     n = m * ppy
@@ -17,5 +18,6 @@ def getBondDuration(y, face, couponRate, m, ppy = 1):
         
     duration = duration / price
     duration = duration / ppy
-    return(price)
+    
+    return (duration)
 
