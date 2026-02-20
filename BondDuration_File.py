@@ -8,11 +8,12 @@ def getBondDuration(y, face, couponRate, m, ppy=1):
     for k in range(1, n + 1):
         t = k / ppy
         cf = c
-        if k = n:
+        if k == n:
             cf += face
         pv = cf / (1 + r) ** k
         price += pv
         num += t * pv
 
     return (num / price)
+
 
